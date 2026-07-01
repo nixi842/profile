@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Batra | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN for configuration) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        charcoal: '#1A1A1A',
+                        gold: '#B89768',
+                        'gold-light': '#D4C0A1'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cream text-charcoal font-sans h-screen w-screen overflow-hidden flex flex-col selection:bg-gold selection:text-cream">
+    
+    <!-- Main Content Area -->
+    <main class="flex-1 flex overflow-hidden relative">
+        
+        <!-- Sidebar Navigation -->
+        <nav class="w-64 border-r border-charcoal/10 flex flex-col justify-between py-12 px-8 shrink-0 z-20 bg-cream h-full">
+            <div>
+                <h2 class="font-serif text-2xl font-bold tracking-wider mb-16 uppercase">PB.</h2>
+                <ul class="space-y-6 text-sm tracking-widest uppercase flex flex-col" id="nav-menu">
+                    <li><button data-target="hero" class="nav-btn active text-left hover:text-gold transition-colors duration-300 w-full text-charcoal">Introduction</button></li>
+                    <li><button data-target="experience" class="nav-btn text-charcoal/40 text-left hover:text-gold transition-colors duration-300 w-full">Experience</button></li>
+                    <li><button data-target="achievements" class="nav-btn text-charcoal/40 text-left hover:text-gold transition-colors duration-300 w-full">Achievements</button></li>
+                    <li><button data-target="projects" class="nav-btn text-charcoal/40 text-left hover:text-gold transition-colors duration-300 w-full">Projects</button></li>
+                    <li><button data-target="education" class="nav-btn text-charcoal/40 text-left hover:text-gold transition-colors duration-300 w-full">Education & Skills</button></li>
+                </ul>
+            </div>
+            <div class="text-xs text-charcoal/40 font-light tracking-widest uppercase">
+                &copy; 2026
+            </div>
+        </nav>
+
+        <!-- Viewport container -->
+        <div class="flex-1 relative overflow-hidden h-full" id="viewport">
+            
+            <!-- SECTION 1: HERO -->
+            <section id="hero" class="view-section active flex w-full h-full absolute inset-0">
+                <div class="flex-1 flex flex-col justify-center px-20 relative z-10 bg-cream">
+                    <h1 class="font-serif text-7xl lg:text-8xl xl:text-9xl font-bold leading-none mb-8 tracking-tighter">
+                        PRATHAM<br/>BATRA
+                    </h1>
+                    <p class="max-w-xl text-charcoal/80 text-lg leading-relaxed font-light">
+                        First-year IPM student at IIM Jammu with a strong record in national case competitions and product management challenges. Coordinates industry engagement for 600+ students and actively contributes to campus economics discourse, with a keen interest in finance, strategy, and startup building.
+                    </p>
+                    <div class="mt-10">
+                        <a href="assets/media__1782941986679.pdf" target="_blank" class="inline-flex items-center px-8 py-4 bg-charcoal text-cream uppercase tracking-widest text-sm hover:bg-gold transition-colors duration-300">
+                            View Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="w-2/5 bg-charcoal/5 relative border-l border-charcoal/10 flex items-center justify-center overflow-hidden transition-all duration-700">
+                    <!-- Image Placeholder -->
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/photo.png'); opacity: 0.9;"></div>
+                    <div class="absolute bottom-10 right-10 text-cream font-serif italic text-xl z-10 drop-shadow-md">
+                        IIM Jammu
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: EXPERIENCE & LEADERSHIP -->
+            <section id="experience" class="view-section w-full h-full absolute inset-0 overflow-y-auto px-20 py-24 scrollbar-hide bg-cream">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="font-serif text-5xl mb-16 border-b border-charcoal/10 pb-6">Experience & Leadership</h2>
+                    
+                    <div class="space-y-16">
+                        <!-- Role 1 -->
+                        <div class="group">
+                            <div class="flex items-baseline justify-between mb-4">
+                                <h3 class="text-2xl font-serif font-semibold group-hover:text-gold transition-colors">Coordinator – Industry Interaction Cell</h3>
+                                <span class="text-sm tracking-widest uppercase text-charcoal/50">IIM Jammu</span>
+                            </div>
+                            <ul class="list-none space-y-3 text-charcoal/80 font-light">
+                                <li class="flex items-start"><span class="text-gold mr-3 mt-1">✦</span> Collaborate with industry leaders to organize impact talks, summits and conclaves, enhancing academic and professional engagement for 600+ students.</li>
+                                <li class="flex items-start"><span class="text-gold mr-3 mt-1">✦</span> Foster strategic partnerships with professionals to deliver sessions that drive value for the batch.</li>
+                                <li class="flex items-start"><span class="text-gold mr-3 mt-1">✦</span> Spearhead flagship events — HR Conclave, Leadership Summit and NavSamvaad — engaging 50+ speakers annually and strengthening the IIMJ community.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Role 2 -->
+                        <div class="group">
+                            <div class="flex items-baseline justify-between mb-4">
+                                <h3 class="text-2xl font-serif font-semibold group-hover:text-gold transition-colors">Member – Artha, The Economics Club</h3>
+                                <span class="text-sm tracking-widest uppercase text-charcoal/50">IIM Jammu</span>
+                            </div>
+                            <ul class="list-none space-y-3 text-charcoal/80 font-light">
+                                <li class="flex items-start"><span class="text-gold mr-3 mt-1">✦</span> Contribute to economic forums and discussions, critiquing and debating real-world policy issues.</li>
+                                <li class="flex items-start"><span class="text-gold mr-3 mt-1">✦</span> Organize intra-institute events on economic themes, encouraging peers to tackle real-life problems.</li>
+                                <li class="flex items-start"><span class="text-gold mr-3 mt-1">✦</span> Coordinate case competitions that apply core macro- and micro-economic concepts in practice.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: ACHIEVEMENTS -->
+            <section id="achievements" class="view-section w-full h-full absolute inset-0 overflow-y-auto px-20 py-24 scrollbar-hide bg-cream">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="font-serif text-5xl mb-16 border-b border-charcoal/10 pb-6">Case Competitions</h2>
+                    
+                    <div class="grid grid-cols-1 gap-6 pb-20">
+                        <!-- Award 1 -->
+                        <a href="assets/media__1782942000240.pdf" target="_blank" class="block border border-charcoal/10 p-8 hover:border-gold hover:bg-gold/5 transition-all duration-300 group flex items-center justify-between">
+                            <div>
+                                <h3 class="text-xl font-serif font-semibold mb-2">2nd Position, Quintessence — Rush 11.0</h3>
+                                <p class="text-sm text-charcoal/70 font-light">IIM Ranchi • Strategic thinking and problem-solving</p>
+                            </div>
+                            <div class="flex items-center text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-sm tracking-widest uppercase mr-3">View Deck</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </div>
+                        </a>
+
+                        <!-- Award 2 -->
+                        <a href="assets/media__1782941999688.pdf" target="_blank" class="block border border-charcoal/10 p-8 hover:border-gold hover:bg-gold/5 transition-all duration-300 group flex items-center justify-between">
+                            <div>
+                                <h3 class="text-xl font-serif font-semibold mb-2">2nd Position, ProdX</h3>
+                                <p class="text-sm text-charcoal/70 font-light">SRCC with Aditya Birla Capital, Deloitte & CYC • Product Management</p>
+                            </div>
+                            <div class="flex items-center text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-sm tracking-widest uppercase mr-3">View Deck</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </div>
+                        </a>
+
+                        <!-- Award 3 -->
+                        <a href="assets/utkrama.pdf" target="_blank" class="block border border-charcoal/10 p-8 hover:border-gold hover:bg-gold/5 transition-all duration-300 group flex items-center justify-between">
+                            <div>
+                                <h3 class="text-xl font-serif font-semibold mb-2">4th Position, Utkrama</h3>
+                                <p class="text-sm text-charcoal/70 font-light">SIMS Pune • National Case Competition</p>
+                            </div>
+                            <div class="flex items-center text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-sm tracking-widest uppercase mr-3">View Deck</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </div>
+                        </a>
+
+                        <!-- Award 4 -->
+                        <a href="assets/media__1782941999986.pdf" target="_blank" class="block border border-charcoal/10 p-8 hover:border-gold hover:bg-gold/5 transition-all duration-300 group flex items-center justify-between">
+                            <div>
+                                <h3 class="text-xl font-serif font-semibold mb-2">National Finalist, UDAAN</h3>
+                                <p class="text-sm text-charcoal/70 font-light">IIM Amritsar • National Case Competition</p>
+                            </div>
+                            <div class="flex items-center text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-sm tracking-widest uppercase mr-3">View Deck</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </div>
+                        </a>
+
+                        <!-- Award 5 -->
+                        <a href="assets/venturex.pdf" target="_blank" class="block border border-charcoal/10 p-8 hover:border-gold hover:bg-gold/5 transition-all duration-300 group flex items-center justify-between">
+                            <div>
+                                <h3 class="text-xl font-serif font-semibold mb-2">National Finalist, VentureX</h3>
+                                <p class="text-sm text-charcoal/70 font-light">SSCBS • Startup building and innovation</p>
+                            </div>
+                            <div class="flex items-center text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="text-sm tracking-widest uppercase mr-3">View Deck</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: PROJECTS -->
+            <section id="projects" class="view-section w-full h-full absolute inset-0 overflow-y-auto px-20 py-24 scrollbar-hide bg-cream">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="font-serif text-5xl mb-16 border-b border-charcoal/10 pb-6">Academic Projects & Extracurriculars</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Project 1 -->
+                        <div class="bg-charcoal text-cream p-10 flex flex-col h-full relative overflow-hidden group">
+                            <div class="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <span class="text-gold tracking-widest text-xs uppercase mb-6 relative z-10">Academic Project</span>
+                            <h3 class="text-2xl font-serif mb-4 relative z-10">Monte Carlo Simulation of Petrol Pump Operations</h3>
+                            <p class="font-light text-cream/70 text-sm leading-relaxed mb-8 flex-1 relative z-10">
+                                Built a Monte Carlo simulation to model customer waiting time and server idle time at a petrol pump under varying arrival and service rates. Analyzed outputs to identify bottlenecks in queue efficiency and generated strategic insights on staffing and pump-allocation.
+                            </p>
+                            <a href="assets/media__1782942015032.pdf" target="_blank" class="inline-flex items-center text-gold hover:text-white transition-colors uppercase tracking-widest text-sm relative z-10 mt-auto">
+                                [View Case Study PDF]
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                        
+                        <!-- Extracurricular -->
+                        <div class="border border-charcoal/20 p-10 flex flex-col h-full relative overflow-hidden group hover:border-charcoal transition-colors duration-500">
+                            <span class="text-charcoal/50 tracking-widest text-xs uppercase mb-6 relative z-10">Extracurricular</span>
+                            <h3 class="text-2xl font-serif mb-4 relative z-10">Finalist, Hult Prize 2026</h3>
+                            <p class="font-light text-charcoal/70 text-sm leading-relaxed flex-1 relative z-10">
+                                Co-built a sustainable manufacturing-as-a-service startup converting underutilized dark assets into enterprise-ready industrial power. Focused on scalable operations and impactful environmental metrics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: EDUCATION & SKILLS -->
+            <section id="education" class="view-section w-full h-full absolute inset-0 overflow-y-auto px-20 py-24 scrollbar-hide bg-cream">
+                <div class="max-w-5xl mx-auto">
+                    
+                    <!-- Education Grid -->
+                    <h2 class="font-serif text-4xl mb-8">Education</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                        <div class="border border-charcoal/10 p-6 flex flex-col justify-between hover:bg-gold/5 transition-colors">
+                            <div>
+                                <h4 class="font-serif text-xl mb-2">IIM Jammu</h4>
+                                <p class="text-charcoal/60 text-sm mb-4">IPM</p>
+                            </div>
+                            <div class="text-gold text-sm tracking-widest uppercase">2025 – 2030</div>
+                        </div>
+                        <div class="border border-charcoal/10 p-6 flex flex-col justify-between hover:bg-gold/5 transition-colors">
+                            <div>
+                                <h4 class="font-serif text-xl mb-2">Modern School</h4>
+                                <p class="text-charcoal/60 text-sm mb-4">Class XII (CBSE) — 95.40%</p>
+                            </div>
+                            <div class="text-gold text-sm tracking-widest uppercase">2025</div>
+                        </div>
+                        <div class="border border-charcoal/10 p-6 flex flex-col justify-between hover:bg-gold/5 transition-colors">
+                            <div>
+                                <h4 class="font-serif text-xl mb-2">Modern School</h4>
+                                <p class="text-charcoal/60 text-sm mb-4">Class X (CBSE) — 93.60%</p>
+                            </div>
+                            <div class="text-gold text-sm tracking-widest uppercase">2023</div>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <h2 class="font-serif text-4xl mb-8">Skills & Interests</h2>
+                    <div class="flex flex-wrap gap-4 mb-20">
+                        <span class="px-6 py-3 bg-charcoal text-cream text-sm tracking-wider uppercase font-light hover:bg-gold transition-colors cursor-default">Microsoft Excel</span>
+                        <span class="px-6 py-3 bg-charcoal text-cream text-sm tracking-wider uppercase font-light hover:bg-gold transition-colors cursor-default">Canva</span>
+                        <span class="px-6 py-3 bg-charcoal text-cream text-sm tracking-wider uppercase font-light hover:bg-gold transition-colors cursor-default">Public Speaking</span>
+                        <span class="px-6 py-3 bg-charcoal text-cream text-sm tracking-wider uppercase font-light hover:bg-gold transition-colors cursor-default">Interpersonal Skills</span>
+                        <span class="px-6 py-3 border border-charcoal/20 text-charcoal text-sm tracking-wider uppercase font-light hover:border-gold transition-colors cursor-default">Economics</span>
+                        <span class="px-6 py-3 border border-charcoal/20 text-charcoal text-sm tracking-wider uppercase font-light hover:border-gold transition-colors cursor-default">Chess</span>
+                    </div>
+
+                    <!-- Certifications -->
+                    <h2 class="font-serif text-4xl mb-8">Certifications</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-20">
+                        <a href="#" data-pdf="assets/cert-boa.jpg" class="group block cert-link">
+                            <div class="h-64 bg-charcoal/5 border border-charcoal/10 mb-4 flex items-center justify-center overflow-hidden relative transition-colors group-hover:bg-gold/10">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('assets/cert-boa.jpg');"></div>
+                                <span class="absolute inset-0 flex items-center justify-center bg-charcoal/20 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span class="bg-cream/90 text-charcoal font-serif italic drop-shadow-sm px-6 py-3 shadow-lg">View Certificate</span>
+                                </span>
+                            </div>
+                            <h4 class="font-semibold font-serif text-lg group-hover:text-gold transition-colors">Global Markets Sales & Trading Analyst Job Simulation</h4>
+                            <p class="text-sm text-gold mt-1 uppercase tracking-widest">Bank of America</p>
+                        </a>
+                        
+                        <a href="#" data-pdf="assets/cert-ascendro.jpg" class="group block cert-link">
+                            <div class="h-64 bg-charcoal/5 border border-charcoal/10 mb-4 flex items-center justify-center overflow-hidden relative transition-colors group-hover:bg-gold/10">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('assets/cert-ascendro.jpg');"></div>
+                                <span class="absolute inset-0 flex items-center justify-center bg-charcoal/20 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span class="bg-cream/90 text-charcoal font-serif italic drop-shadow-sm px-6 py-3 shadow-lg">View Certificate</span>
+                                </span>
+                            </div>
+                            <h4 class="font-semibold font-serif text-lg group-hover:text-gold transition-colors">Ascendro Global Upskilling Program</h4>
+                            <p class="text-sm text-gold mt-1 uppercase tracking-widest">Finance</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-16 border-t border-charcoal/10 flex items-center justify-between px-8 bg-cream z-30 shrink-0 text-sm font-light relative">
+        <div class="uppercase tracking-widest font-medium">Inquiries</div>
+        <div class="flex items-center space-x-8 text-charcoal/70">
+            <a href="mailto:ipm25098@iimj.ac.in" class="hover:text-gold transition-colors">ipm25098@iimj.ac.in</a>
+            <span class="text-charcoal/20">|</span>
+            <a href="tel:9582351228" class="hover:text-gold transition-colors">9582351228</a>
+            <span class="text-charcoal/20">|</span>
+            <a href="https://www.linkedin.com/in/pratham-batra-000348381/" target="_blank" class="hover:text-gold transition-colors">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- PDF Modal -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 bg-charcoal/95 hidden flex flex-col opacity-0 transition-opacity duration-300">
+        <div class="h-16 flex items-center px-8 border-b border-white/10 shrink-0">
+            <button id="close-modal" class="text-white hover:text-gold flex items-center tracking-widest text-sm uppercase transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back
+            </button>
+        </div>
+        <div class="flex-1 w-full h-full relative">
+            <iframe id="pdf-frame" src="" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
